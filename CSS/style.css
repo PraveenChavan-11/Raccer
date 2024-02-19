@@ -1,0 +1,839 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+#container {
+   width: 100%;
+}
+
+p {
+   font-family: 'Oswald', sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   font-family: 'DM Sans', sans-serif;
+}
+
+li {
+   list-style: none;
+}
+
+nav a:hover{
+   box-shadow: 1px 1px 5px #1C1E21;
+   background-color: #25D366;
+   border-radius: 100px;
+   padding: 10px;
+}
+
+button{
+   cursor: pointer;
+}
+
+header {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   width: 100%;
+   position: fixed;
+   background-color: white;
+   z-index: 10;
+}
+
+header div {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   width: 50%;
+}
+
+
+
+.banner {
+   width: 100%;
+}
+
+.banner img,
+.car img,
+.clip img,
+.eventimg img,
+#shades img,
+.volunteer img,
+.teamimg img,
+#shades1 img,
+.logo1 img,
+.comment1 img {
+   width: 100%;
+}
+
+.line {
+   height: 15px;
+   margin: 0 5px;
+   border-right: 1px solid #777777;
+   width: 10px;
+}
+
+header p {
+   color: #777777;
+   letter-spacing: 2px;
+   font-size: 8px;
+}
+
+nav a {
+   margin: 0px 15px;
+   font-size: 14px;
+   letter-spacing: 1px;
+}
+
+nav{
+   display: none;
+}
+
+
+.btn {
+   background-color: #25D366;
+   text-align: center;
+   border: 1px solid;
+   border-radius: 100px;
+   padding: 10px 18px;
+   color: #ffffff;
+   font-size: 14px;
+   letter-spacing: 1px;
+}
+
+#herosection {
+   background-image: url(../Images/Background/slider-img-01.png);
+   background-size: 100% 100%;
+   padding: 50px 0px;
+}
+
+#herosection div h1 {
+   font-size: 35px;
+   margin-left: 35px;
+   color: #1C1E21;
+}
+
+#herosection div h2 {
+   font-size: 25px;
+   margin-left: 35px;
+   color: #1C1E21;
+   font-weight: 500;
+}
+
+#herosection div h1 span {
+   text-decoration-line: underline;
+   text-decoration-color: #25D366;
+}
+
+.flex,
+.team {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.car,
+#shades,
+.team div,
+#shades1 {
+   width: 100%;
+}
+
+.car img {
+   filter: drop-shadow(2px 4px 6px black);
+   animation: car 4s infinite;
+}
+
+@keyframes car {
+   from {
+      transform: scale(0);
+   }
+
+   to {
+      transform: scale(1);
+   }
+}
+
+.carinfo {
+   width: 100%;
+   margin: auto;
+   text-align: center;
+}
+
+.carinfo p {
+   color: rgb(119, 119, 119);
+   font-size: 17px;
+   line-height: 28px;
+   padding: 10px 0;
+   display: none;
+}
+
+.carinfo h3 {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   display: none;
+}
+
+#service {
+   background-color: #1C1E21;
+   padding: 30px 0;
+}
+
+.clip {
+   position: relative;
+   width: 100%;
+   color: white;
+}
+
+.clippath1 img {
+   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clippath2 img {
+   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clippath3 img {
+   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.clip h3 {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+marquee,
+marquee a {
+   font-family: 'Englebert', cursive;
+   color: #777777;
+   padding: 20px 10px 10px 10px;
+   font-size: 23px;
+   font-weight: 700;
+   text-shadow: 2px 4px 6px black;
+}
+
+#event {
+   background-image: url(../Images/Background/row-bgimage-2.png);
+   background-size: cover;
+   padding: 50px 0px;
+}
+
+.event {
+   width: 100%;
+   background-color: #FCF5EB;
+   padding: 20px 30px 20px 30px;
+   margin: 15px;
+   border-top: 1px solid;
+   border-bottom: 1px solid;
+}
+
+.event div p {
+   color: #777777;
+   letter-spacing: 1px;
+   line-height: 25px;
+   padding: 10px 10px 10px 0;
+}
+
+.eventimg img {
+   height: 150px;
+   border-radius: 10px;
+   object-fit: cover;
+   margin-top: 10px;
+}
+
+#volunteer {
+   background-color: #1C1E21;
+   margin-top: -6px;
+   padding: 45px 0;
+   color: white;
+   text-align: center;
+}
+
+#volunteer div h2 {
+   font-size: 35px;
+}
+
+.volunteer div,
+.comment {
+   text-align: left;
+   border: 2px solid #777777;
+   border-radius: 10px;
+   padding: 20px;
+   margin: 30px;
+   width: 100%;
+}
+
+.volunteer div p,
+.team div p,
+.member ul li,
+.comment div p,
+#copyright p {
+   color: #777777;
+   letter-spacing: 1px;
+   line-height: 25px;
+   padding: 10px 0;
+}
+
+.volunteer div h3,
+.team div h3,
+.comment h3 {
+   color: white;
+   letter-spacing: 1px;
+   line-height: 25px;
+   padding-bottom: 10px;
+}
+
+#volunteer div button,
+#team div button,
+#contact div button,
+.comment div button,
+#sitemap div button,
+.social button,
+.arrow {
+   color: white;
+   background-color: transparent;
+   letter-spacing: 1px;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 100px;
+   border: 1px solid;
+}
+
+fa-clock,
+fa-map-marker-alt {
+   color: #777777;
+}
+
+.volunteer img,
+.teamimg img {
+   border-radius: 10px;
+}
+
+#team {
+   padding: 70px 10px;
+}
+
+.team {
+   text-align: center;
+}
+
+.teamimg {
+   width: 40%;
+   margin: auto;
+}
+
+.team div h3,
+.comment h3 {
+   color: black;
+}
+
+#team div button,
+.comment div button {
+   color: black;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.member h2 {
+   font-size: 30px;
+   margin: 30px 0 20px 0;
+}
+
+.member ul li {
+   list-style: circle;
+}
+
+#contact {
+   background-image: url(../Images/Background/row-bgimage-3.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   padding: 30px 20px;
+   text-align: center;
+}
+
+input,
+textarea {
+   border-radius: 100px;
+   padding: 20px;
+   margin: 10px;
+   color: rgba(0, 0, 0, 0.829);
+   background-color: #ffffffcf;
+   border: 0px;
+   width: 250px;
+}
+
+textarea {
+   border-radius: 20px;
+}
+
+#contact div button {
+   background-color: #1C1E21;
+   padding: 20px 50px 20px 50px;
+}
+
+#contact div h2 {
+   font-size: 40px;
+}
+
+#contact div span {
+   color: #25D366;
+}
+
+#shades1 {
+   margin-top: -25px;
+}
+
+#sponsors {
+   background-color: #25D366;
+}
+
+#comment {
+   width: 100%;
+   padding: 20px 30px 20px 30px;
+   border-top: 1px solid;
+   border-bottom: 1px solid;
+}
+
+.comment {
+   margin: 20px 0;
+   background-color: #FCF5EB;
+}
+
+.comment1 {
+   display: none;
+}
+
+.comment div button {
+   margin: 15px 0;
+}
+
+footer {
+   background-color: #1C1E21;
+   color: white;
+   padding: 30px 30px 20px 30px;
+}
+
+#sitemap div button {
+   margin: 20px 0;
+   padding: 20px 20px;
+}
+
+.hr {
+   border-top: 1px solid #777777;
+   margin-top: 30px;
+}
+
+.sitemap div p {
+   color: #b1b1b1;
+   line-height: 28px;
+   padding-bottom: 10px;
+   font-size: 19px;
+}
+
+#sitemap div h2 {
+   color: white;
+   letter-spacing: 1px;
+   line-height: 40px;
+   padding-bottom: 10px;
+   font-size: 35px;
+}
+
+.quicklinks div ul li a,
+.quicklinks div ul li {
+   color: #b1b1b1;
+   padding: 10px 0;
+}
+
+.quicklinks div h3 {
+   margin: 20px 0;
+}
+
+#copyright p {
+   color: white;
+   padding: 20px 0;
+   font-size: 15px;
+}
+
+.fb {
+   background-color: #295AB8 !important;
+   border: 0px !important;
+}
+
+.twit {
+   background-color: #FF3A85 !important;
+   border: 0px !important;
+}
+
+.insta {
+   background-image: linear-gradient(83deg, #F7C76C -5.21%, #F11E4F 48.76%, #5B3BDE 97.7%);
+   border: 0px !important;
+}
+
+.linkedin {
+   background-color: #0072b1 !important;
+   border: 0px !important;
+}
+
+.arrow {
+   background-color: #2b9953 !important;
+   border: 0px !important;
+   position: fixed;
+   right: 20px;
+   bottom: 35px;
+   animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+   0% {
+      bottom: 35px;
+   }
+
+   50% {
+      bottom: 50px;
+   }
+
+   100% {
+      bottom: 35px;
+   }
+}
+
+.logo1 {
+   width: 60%;
+   margin: 20px 0;
+}
+
+
+@media only screen and (min-width:768px) {
+
+   .teamimg {
+      width: 30% !important;
+      margin: 0px;
+   }
+
+   header div {
+      width: 40%;
+  }
+
+   #herosection div h1 {
+      font-size: 60px;
+      margin-left: 0;
+      text-align: center;
+   }
+
+   #herosection div h2 {
+      text-align: center;
+      margin-left: 0;
+   }
+
+   .team {
+      width: 100%;
+      background-color: #FCF5EB;
+      margin: 3px;
+      padding-left: 5px;
+      border-radius: 10px;
+   }
+
+   .team div {
+      text-align: left;
+      width: 60%;
+   }
+
+   .teambox{
+      width: 48%;
+   }
+
+   .member{
+      width: 100%;
+   }
+
+   .member h2 {
+      font-size: 45px;
+   }
+
+   #contact div button {
+      display: block;
+      margin: auto;
+   }
+
+   input {
+      width: 45%;
+   }
+
+   textarea {
+      width: 85%;
+   }
+
+   #shades1 {
+      margin-top: -56px;
+   }
+
+   #sitemap div h2 {
+      font-size: 50px;
+      line-height: 55px;
+   }
+
+   .logo1 {
+      width: 40%;
+   }
+
+   .quicklinks {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .comment {
+      height: 200px;
+      overflow: hidden;
+   }
+
+   .comment1 {
+      display: block;
+      width: 100%;
+   }
+
+   .comment1 img {
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+   }
+
+   .comment1 button {
+      display: none;
+   }
+
+   .quicklinks1 {
+      margin-top: 68px;
+   }
+
+   .clip h3 {
+      font-size: 23px;
+   }
+
+   header p {
+      font-size: 20px;
+   }
+
+   .line {
+      height: 40px;
+      margin: 0px 14px
+   }
+
+}
+
+@media only screen and (min-width:1024px) {
+
+   .carinfo p,
+   .carinfo h3,
+   nav {
+      display: block;
+   }
+
+   .banner {
+      width: 100%;
+   }
+
+   #herosection div h1 {
+      font-size: 100px;
+      margin-bottom: 80px;
+   }
+
+   #herosection div h2 {
+      font-size: 50px;
+      margin-top: 70px;
+   }
+
+   #herosection div h1,
+   #herosection div h2 {
+      text-align: left;
+      margin-left: 20px;
+   }
+
+   header p {
+      font-size: 15px;
+   }
+
+   .menu {
+      display: none;
+   }
+
+   header div {
+      width: 28%;
+   }
+
+   nav {
+      width: 70%;
+      text-align: end;
+   }
+
+   .car {
+      width: 65%;
+      height: 300px;
+   }
+
+   .carinfo {
+      width: 30%;
+      text-align: left;
+   }
+
+   #service .flex {
+      flex-wrap: nowrap;
+      padding: 10px 40px 0 40px;
+   }
+
+   marquee,
+   marquee a {
+      padding-right: 30px;
+      font-size: 60px;
+      line-height: 100px;
+   }
+
+   #volunteer div h2 {
+      font-size: 80px;
+   }
+
+   .volunteer {
+      margin-top: 50px;
+      justify-content: center;
+   }
+
+   .volunteer div {
+      width: 26%;
+   }
+
+   .volunteer div:last-child {
+      width: 90%;
+   }
+
+   .volunteer div p {
+      font-size: 22px;
+   }
+
+   #shades1 {
+      display: none;
+   }
+
+   .sitemap {
+      width: 60%;
+   }
+
+   .sitemap div {
+      width: 100% !important;
+   }
+
+   .logo1 img {
+      width: 30% !important;
+   }
+
+   #sitemap div:first-child {
+      width: 35%;
+   }
+
+   .quicklinks div {
+      width: 33%;
+   }
+
+   #copyright p {
+      font-size: 19px;
+   }
+
+   .quicklinks {
+      justify-content: center;
+   }
+
+   .arrow {
+      font-size: 30px;
+      padding: 10px;
+   }
+
+   .social {
+      width: 52%;
+   }
+
+   .comment div,
+   .team {
+      justify-content: left;
+   }
+
+   .comment div button,
+   .comment div p {
+      margin-right: 15px;
+   }
+
+   .teamimg img {
+      width: 100%;
+   }
+
+   .teamimg{
+      width: 20% !important;
+   }
+
+   .teambox {
+      width: 31%;
+   }
+
+   .team {
+      width: 100% !important;
+      border: 1px solid;
+      padding: 10px;
+      justify-content: space-between;
+      background-color: transparent;
+   }
+
+   .team:hover{
+      background-color: #25D366;
+   }
+
+   .teamname {
+      width: 80%;
+   }
+
+   .member h2 {
+      font-size: 24px;
+   }
+
+   #team div button {
+      font-size: 14px;
+      margin: 0;
+   }
+
+   #volunteer div button {
+    padding: 24px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#contact div{
+   width: 50%;
+   margin-left: auto;
+   padding: 20px;
+}
+
+.clip{
+   width: 37%;
+   margin-top: 20px;
+}
+
+.clippath2{
+       position: absolute;
+    z-index: 1;
+        width: 45%;
+    left: 370px;
+}
+
+}
